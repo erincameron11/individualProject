@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Me</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+  
+    <!-- NAVBAR -->
+    <ul class="navbar">
+            <li class="home"><a href="home.html">Erin Cameron</a></li>
+            <li class="contact"><a href="contact.html">Contact</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    
+    <form name="contactForm" onsubmit="return(validate());" novalidate> <!-- the novalidate nullifies the Chrome auto-populated JS responses to forms -->
+        <h2>Contact Form</h2>
+        <p>Please enter your info below:</p><br>
+        <label for="name">Name: </label>
+        <br>
+            <input type="text" placeholder="name" id="name" required>
+        <br><br>
+        <label for="email">Email Address: </label><br>
+            <input type="email" placeholder="email address" id="email" required>
+        <br><br>
+        <label for="message">Message: </label><br>
+            <textarea placeholder="write your message here" id="message" required></textarea>
+        <br><br>
+        <input type="checkbox" id="sendcopy">
+            <label for="sendcopy">Send copy of email to myself</label>
+        <br><br>
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+    </form>
+
+
+</body>
+
+</html>

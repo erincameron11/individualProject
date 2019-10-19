@@ -1,0 +1,235 @@
+/* Stylesheet */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e0e0e0;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* background-color: #737c8a; */
+}
+
+div.header {
+    height: 10vh;
+    width: 100vw;
+    font-size: 30px;
+    background: linear-gradient(whitesmoke, #2f3440);
+    color: #dbd9d9;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+
+/* HOMEPAGE CSS */
+.title {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+/* Homepage image with photo animation */
+@keyframes photo-fade-in {
+    from  {opacity: 0;}
+    to    {opacity: 1;}
+}
+
+.homepage-image {
+  position: absolute;
+  filter: grayscale(100%);
+  bottom: 0;
+  left: 0;
+  animation: photo-fade-in 5s 1;
+}
+
+
+
+
+/* NAVBAR CSS */
+/* setting margin & padding to 0 helps remove default browser settings */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #757474;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+li {
+    display: inline;
+    float: right;
+    border-right: 1px solid whitesmoke;
+}
+
+li.contact {
+  border-right: none;
+}
+
+/* display block makes the whole element clickable, not just the text */
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* LVHA - link, visited, hover, active */
+li a:hover {
+    background-color: whitesmoke;
+    color: #575555;
+    border-left: whitesmoke;
+    border-right: whitesmoke;
+}
+
+li a:active {
+    background-color: royalblue;
+}
+
+li.home {
+    float: left;
+    background-color: #757474;
+    border-right: none;
+}
+
+
+
+/* ABOUT ME */
+.bio {
+    color: whitesmoke;
+}
+
+img.erinPhoto {
+    height: 40%;
+    width: 40%;
+    float: left; 
+    padding: 30px;
+    shape-outside: circle();
+}
+
+
+
+/* EDUCATION CSS */
+.education {
+  padding: 15px;
+  margin: 20px;
+  background-color: whitesmoke;
+  color: #2f3440;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+
+
+
+/* SKILLS CSS3 */
+table, th, td {
+    border: solid #2f3440 1px;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 75%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legend {
+  text-align: center;
+}
+
+tr {
+  background-color: #d1d1d1;
+  color: #2f3440;
+}
+
+th {
+    height: 40px;
+    background-color: #757474;
+    color: whitesmoke;
+}
+
+tr:hover {
+    background-color: whitesmoke;
+    color: #2f3440;
+}
+
+
+
+
+
+/* CONTACT FORM */
+form {
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    padding: 30px;
+    color: #2f3440;
+    border-radius: 10px;
+}
+
+textarea {
+  min-width: 400px;
+  min-height: 100px;
+  border: solid 1px #2f3440;
+  border-radius: 3px;
+}
+
+button {
+  margin: 5px;
+  height: 35px;
+  width: 80px;
+  border: solid 1px #2f3440;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.submit {
+  background-color: #9fd2d6;
+}
+
+.submit:hover {
+  background-color: #70c6c5;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: #ce618b;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #c1346a;
+}
+
+input {
+  min-width: 200px;
+  min-height: 20px;
+  border: solid 1px #2f3440;
+  border-radius: 3px;
+}
+
+
+
+
